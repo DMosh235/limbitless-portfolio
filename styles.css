@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: serif;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -87,6 +88,7 @@ header{
     height: 160px;
 }
 
+
 /* HOME */
 
 section#home{
@@ -104,6 +106,26 @@ section#home{
     margin-bottom: 1rem;
 }
 
+/* ABOUT */
+
+.section2{
+    background-color: #fff;
+    height: 100vh;
+}
+
+/* RESUME */
+
+.section3{
+    background-color: grey;
+    height: 100vh;
+}
+
+/* CONTACT */
+
+.section4{
+    background-color: darkgrey;
+    height: 30vh;
+}
 
 /* RESPONSIVE NAV */
 
