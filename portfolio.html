@@ -6,39 +6,76 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css"/>
-    <title>Daniel's Website</title>
+    <title>Dan's Portfolio</title>
 </head>
 <body>
     <header>
         <div class="navbar">
-            <div class="logo"><a href="#">Daniel's Portfolio</a></div>
             <div class="links">
-                <li><a href="home">Home</a></li>
-                <li><a href="resume">Resume</a></li>
-                <li><a href="about">About</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
             </div>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
             <div class="dropdown_menu">
-                <li><a href="home">Home</a></li>
-                <li><a href="resume">Resume</a></li>
-                <li><a href="about">About</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
             </div>
         </div>
     </header>
 
     <main>
-        <section id="home">
-            <h1>Hello</h1>
-            <p>Lorem ipsum odor amet, consectetuer adipiscing elit. At mattis suscipit quisque id proin platea hendrerit aenean vehicula.</p>
-        </section>
+        <div class="section1">
+            <section id="home">
+                <h1>Hello</h1>
+                <h2>My name is Daniel Moshovetis, and this is my resume.</h2>
+            </section>
+        </div>
+        <div class="section2">
+            <h1 id="about-title">Who I am...</h1>
+            <section id="about">
+                <div id="small-pic">
+                    <img src="https://austinpeopleworks.com/wp-content/uploads/2020/12/blank-profile-picture-973460_1280.png" alt="Avatar">
+                </div>
+                <div id="description">
+                    <h3>Motivated and hardworking computer science student at the University of Central	Florida	with a strong foundation in	software development and mathematics. 
+                        Seeking to leverage my skills, through internships, to contribute to innovative projects and deliver reliable, high-quality work.</h3>
+                </div>
+            </section>
+        </div>
+        <div class="section3">
+            <section id="resume">
+                <h1>This is where my resume section will be!</h1>
+
+                <p>    
+                    <a href="/Users/danmoshovetis/Documents/Summer2024_Resume.pdf" class="button">
+                       <i class="fa fa-download"></i>
+                          Download my Resume!
+                    </a>
+                </p>
+
+            </section>
+        </div>
+        <div class="section4">
+            <section id="contact">
+                <h1>This is where my contact info will be!</h1>
+                <div class="icons">
+                    <a href="#" class="fa fa-linkedin"></a>
+                </div>
+            </section>
+        </div>
+        
     </main>
 
     <script>
+        
         const toggleBtn = document.querySelector('.toggle_btn')
         const toggleBtnIcon = document.querySelector('.toggle_btn i')
         const dropdown_menu = document.querySelector('.dropdown_menu')
