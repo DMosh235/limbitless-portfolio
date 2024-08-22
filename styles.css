@@ -28,6 +28,7 @@ a:hover{
     color: rgb(188, 188, 188)
 }
 
+
 /* HEADER */
 header{
     position: relative;
@@ -106,22 +107,21 @@ section#home{
 
 .section2{
     background-color: #262626;
-    height: 100vh;
+    height: 80vh;
 }
 
 #about{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 15%;
+    padding-top: 10%;
 }
 
 #about-title{
     text-align: left;
     color: #fff;
-    padding-top: 5%;
-    padding-left: 5%;
-    font-size: 3rem;
+    font-size: 2.5rem;
+    padding-bottom: 2.5%;
 }
 
 #small-pic{
@@ -141,21 +141,52 @@ section#home{
     height: 20%;
     width: 30%;
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin-left: -15%;
+    padding-top: 2.5%;
 }
 
 /* RESUME */
 
 .section3{
-    background-color: grey;
+    background-color: #262626;
     height: 100vh;
+}
+
+
+.section3 h1{
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 35% 35%;
+    padding: 10px;
+    gap: 50px 50px;
+    padding-left: 20%;
+}
+  
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#resume-button{
+    padding-left: 42%;
+    padding-right: 42%;
+
 }
 
 /* CONTACT */
 
 .section4{
-    background-color: darkgrey;
+    background-color: #262626;
     height: 30vh;
 }
 
