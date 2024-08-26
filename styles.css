@@ -1,56 +1,63 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     scroll-behavior: smooth;
 }
 
-body{
-    height: 100vh;
+body {
     background-color: #000;
-    background-image: url("/Users/danmoshovetis/Desktop/Group_Grey.png");
     background-size: cover;
     background-position: center;
     backdrop-filter: blur(2px);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
-li{
+li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
     font-size: 1.5rem;
 }
 
-a:hover{
-    color: #4b97de
+a:hover {
+    color: #4b97de;
 }
-
 
 /* HEADER */
-header{
-    position: relative;
-    padding: 0 0;
-    background-color: rgba(179, 179, 179, 0.5);
+header {
+    position: fixed; /* Ensure the navbar stays fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(179, 179, 179, 0.5); /* Semi-transparent background */
+    padding: 0;
+    margin: 0;
 }
 
-.navbar{
+.navbar {
     width: 100%;
     height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 2rem;
 }
 
-.navbar .links{
+.navbar .links {
     display: flex;
     gap: 6rem;
 }
 
-.navbar .toggle_btn{
+.navbar .toggle_btn {
     color: #fff;
     font-size: 1.5rem;
     cursor: pointer;
@@ -61,8 +68,7 @@ header{
 }
 
 /* DROP DOWN MENU */
-
-.dropdown_menu{
+.dropdown_menu {
     position: absolute;
     right: 2rem;
     top: 60px;
@@ -76,113 +82,144 @@ header{
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
-.dropdown_menu li{
+.dropdown_menu li {
     padding: 0.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.dropdown_menu.open{
+.dropdown_menu.open {
     height: 180px;
 }
 
-
 /* HOME */
-
-section#home{
-    height: calc(100vh - 60px);
+section#home {
+    position: relative;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
     text-align: center;
     color: #fff;
-    padding-bottom: 60px;
+    overflow: hidden;
 }
 
-#home h1{
-    font-size: 5rem;
+.background-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.25) translateY(-10%); 
+    z-index: -1;
+}
+
+#title-screen {
+    z-index: 1;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+}
+
+#home h1 {
     margin-bottom: 1rem;
-    font-family: Verdana;
-    font-weight: bolder;
+    margin-top: 1rem;
+    font-size: 3rem;
 }
 
-#title-screen{
-    font-size: 2rem;
-    font-family: Verdana;
-    font-weight: bolder;
-    max-width: 50%;
+#title-screen h2 {
+    font-size: 1.5rem;
 }
 
+#text-br{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
 
 /* ABOUT */
-
-.section2{
+.section2 {
     background-color: #262626;
-    height: 80vh;
+    padding: 5% 0;
 }
 
-#about{
+#about {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     padding-top: 5%;
 }
 
-#about-title{
+#about-title {
     text-align: left;
     color: #4b97de;
-    font-size: 2.5rem;
+    font-size: 3rem;
     padding-bottom: 5%;
 }
 
-#small-pic{
+#small-pic {
     height: 32.5%;
     width: 32.5%;
     padding-right: 10rem;
-    padding-left: -5%;
 }
 
-#small-pic img{
+#small-pic img {
     height: auto;
     max-width: 100%;
 }
 
-#description{
-    height: 20%;
+
+#description {
     width: 30%;
     color: #fff;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin-left: -15%;
     padding-top: 2.5%;
 }
 
 /* RESUME */
-
-.section3{
+.section3 {
     background-color: #262626;
-    height: 100vh;
-    padding-top: 5%;
+    padding-top: 10%;
+    padding-bottom: 5%;
 }
 
-#resume-header{
+#resume-header {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 1rem;
 }
 
-.section3 h1{
+.section3 h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     color: #fff;
+    padding-bottom: 2rem;
 }
 
-#resume-color{
+#resume-color {
     color: #4b97de;
 }
 
+
+.section-title {
+    font-size: 2rem;
+    color: #4b97de;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid-section {
+    padding: 20px;
+}
+
+.grid-section {
+    padding: 20px;
+}
 
 .grid-container {
     display: grid;
@@ -191,7 +228,7 @@ section#home{
     gap: 50px 50px;
     padding-left: 20%;
 }
-  
+
 .grid-item {
     background-color: #6e6e6e;
     border: 1px solid #4b97de;
@@ -201,73 +238,69 @@ section#home{
     border-radius: 5px;
 }
 
-.grid-item h4{
+.grid-item h4 {
     color: #4b97de;
 }
 
-.grid-item h3{
+.grid-item h3 {
     color: white;
 }
 
-.grid-item p{
+.grid-item p {
     color: lightgrey;
+    font-size: 1.5rem;
 }
 
-#resume-button{
-    padding-left: 42%;
-    padding-right: 42%;
+#resume-button {
+    text-align: center;
+    padding: 20px 0;
     color: #fff;
 }
 
-.button{
+.button {
     color: #fff;
 }
 
 /* CONTACT */
-
-.section4{
+.section4 {
     background-color: #262626;
-    height: 30vh;
+    padding: 5% 0;
 }
 
-.icons{
+.icons {
     padding: 20px;
     font-size: 30px;
-    width: 50px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
 }
 
-.fa-linkedin{
-
+.fa-linkedin {
     background: #007bb5;
     color: white;
-  }
-  
-  /* Add a hover effect if you want */
-  .fa-linkedin:hover {
+}
+
+.fa-linkedin:hover {
     opacity: 0.7;
-  }
-  
+}
 
 /* RESPONSIVE NAV */
-
-@media(max-width: 992px){
-    .navbar .links{
+@media (max-width: 992px) {
+    .navbar .links {
         display: none;
     }
-    .navbar .toggle_btn{
+
+    .navbar .toggle_btn {
         display: block;
     }
 
-    .dropdown_menu{
+    .dropdown_menu {
         display: block;
     }
 }
 
-@media(max-width: 576px){
-    .dropdown_menu{
+@media (max-width: 576px) {
+    .dropdown_menu {
         left: 2rem;
         width: unset;
     }
