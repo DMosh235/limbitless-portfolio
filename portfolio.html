@@ -14,19 +14,19 @@
     <header>
         <div class="navbar">
             <div class="links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home"><h2>Home</h2></a></li>
+                <li><a href="#about"><h2>About</h2></a></li>
+                <li><a href="#resume"><h2>Resume</h2></a></li>
+                <li><a href="#contact"><h2>Contact</h2></a></li>
             </div>
             <div class="toggle_btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
             <div class="dropdown_menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home"><h4>Home</h4></a></li>
+                <li><a href="#about"><h4>About</h4></a></li>
+                <li><a href="#resume"><h4>Resume</h4></a></li>
+                <li><a href="#contact"><h4>Contact</h4></a></li>
             </div>
         </div>
     </header>
@@ -34,14 +34,19 @@
     <main>
         <div class="section1">
             <section id="home">
-                <h1>Hello</h1>
-                <h2>My name is Daniel Moshovetis, and this is my resume.</h2>
+                <img src="/Users/danmoshovetis/Desktop/Group_Grey.png" alt="Group Photo" class="background-img">
+                <div id="text-br">
+                    <h1>Hello!</h1>
+                    <div id="title-screen">
+                        <h2>My name is Daniel Moshovetis, and this is my resume.</h2>
+                    </div>
+                </div>
             </section>
         </div>
         <div class="section2">
             <section id="about">
                 <div id="small-pic">
-                    <img src="/Users/danmoshovetis/Downloads/1666125499048.jpeg" alt="Avatar">
+                    <img src="/Users/danmoshovetis/Desktop/Me_Grey.png" alt="Avatar">
                 </div>
                 <div id="description">
                     <h1 id="about-title">Who I am...</h1>
@@ -53,31 +58,77 @@
         </div>
         <div class="section3">
             <section id="resume">
-                <h1>My Resume</h1>
-
-                <div class="grid-container">
-                    <div class="grid-item">1</div>
-                    <div class="grid-item">2</div>
-                    <div class="grid-item">3</div>  
-                    <div class="grid-item">4</div>
-                    <div class="grid-item">5</div>
-                    <div class="grid-item">6</div>  
+                <div id="resume-header">
+                    <h1>My</h1>
+                    <h1 id="resume-color">Resume</h1>
                 </div>
-
+                
+                <div class="grid-container">
+                    <div class="grid-item" id="grid-1">
+                        <h3>Education</hs3>
+                        <div id="edu-info">
+                            <h4>University of Central Florida</h4>
+                            <br>
+                            <p>Computer Science B.S. (2021 - Present)</p>
+                        </div>
+                    </div>
+                    <div class="grid-item" id="grid-2">
+                        <h3>Student Organizations</h3>
+                        <div id="org-info">
+                            <h4>Knighthacks</h4>
+                            <p>Member: 2022 - Present</p>
+                            <br>
+                            <h4>Knights Powerlifting</h4>
+                            <p>Member: 2023 - Present</p>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <h3>Professional Experience</h3>
+                        <div id="exp-info">
+                            <h4>Systems Engineering Intern - NASA (KSC)</h4>
+                            <p>Jan 2023 - Jun 2023</p>
+                            <br>
+                            <h4>Teaching Assistant - UCF</h4>
+                            <p>Dec 2022 - Aug 2023</p>
+                            <br>
+                            <h4>Assistant Scholar - Limbitless Solutions</h4>
+                            <p>August 2024 - Present</p>
+                        </div>
+                    </div>  
+                    <div class="grid-item">
+                        <h3>Personal Projects</h3>
+                        <div id="proj-info">
+                            <h4>Nothing But Docs...</h4>
+                            <p>Front End Engineer | Svelte,	Tailwind, JavaScript</p>
+                            <br>
+                            <h4>Contact	Manager</h4>
+                            <p>Back End Engineer | MySQL, PHP, JavaScript, HTML, CSS</p>
+                            <br>
+                            <h4>Weather	Tracker</h4>
+                            <p>Full Stack (Solo Project) | React, TypeScript, CSS, HTML</p>
+                        </div>
+                    </div>
+                </div>    
                 <p id="resume-button">    
                     <a href="/Users/danmoshovetis/Documents/Summer2024_Resume.pdf" class="button">
                        <i class="fa fa-download"></i>
-                          Download my Resume!
+                        Download my Resume!
                     </a>
-                </p>
-
+                </p>    
             </section>
         </div>
+
         <div class="section4">
             <section id="contact">
-                <h1>This is where my contact info will be!</h1>
+                <h1 id="contact-title">Contact Me!</h1>
+                <div id="contact-sub">
+                    <h3 id="phone">Phone: (802) 495-6978</h3>
+                    <h3 id="email">Email: da977823@ucf.edu</h3>
+                </div>
                 <div class="icons">
                     <a href="https://www.linkedin.com/in/daniel-moshovetis-59050a24a/?trk=opento_sprofile_details" class="fa fa-linkedin"></a>
+                    <a href="https://github.com/DMosh235" class="fa fa-github"></a>
+                    <a href="https://app.joinhandshake.com/profiles/31320427" class="fa fa-handshake"></a>
                 </div>
             </section>
         </div>
