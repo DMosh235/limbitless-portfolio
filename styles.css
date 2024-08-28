@@ -28,17 +28,17 @@ a {
 }
 
 a:hover {
-    color: #4b97de;
+    color: #EF8354;
 }
 
 /* HEADER */
 header {
-    position: fixed; /* Ensure the navbar stays fixed at the top */
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: rgba(179, 179, 179, 0.5); /* Semi-transparent background */
+    background-color: rgba(179, 179, 179, 0.5); 
     padding: 0;
     margin: 0;
 }
@@ -58,12 +58,12 @@ header {
 }
 
 .navbar .toggle_btn {
-    color: #fff;
+    color: #EF8354;
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
     position: fixed;
-    top: 2rem;
+    top: 1rem;
     right: 2rem;
 }
 
@@ -87,10 +87,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1rem;
 }
 
 .dropdown_menu.open {
-    height: 180px;
+    height: 200px;
 }
 
 /* HOME */
@@ -119,8 +120,7 @@ section#home {
 
 #title-screen {
     z-index: 1;
-    padding: 2rem 3rem;
-    border-radius: 10px;
+    padding: 3rem 4rem;
 }
 
 #home h1 {
@@ -130,7 +130,7 @@ section#home {
 }
 
 #title-screen h2 {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 
 #text-br{
@@ -142,7 +142,7 @@ section#home {
 
 /* ABOUT */
 .section2 {
-    background-color: #262626;
+    background-color: #4F5D75;
     padding: 5% 0;
 }
 
@@ -155,7 +155,7 @@ section#home {
 
 #about-title {
     text-align: left;
-    color: #4b97de;
+    color: #EF8354;
     font-size: 3rem;
     padding-bottom: 5%;
 }
@@ -176,13 +176,14 @@ section#home {
     width: 30%;
     color: #fff;
     font-size: 1.5rem;
+    font-weight: lighter;
     margin-left: -15%;
     padding-top: 2.5%;
 }
 
 /* RESUME */
 .section3 {
-    background-color: #262626;
+    background-color: #4F5D75;
     padding-top: 10%;
     padding-bottom: 5%;
 }
@@ -202,13 +203,13 @@ section#home {
 }
 
 #resume-color {
-    color: #4b97de;
+    color: #EF8354;
 }
 
 
 .section-title {
     font-size: 2rem;
-    color: #4b97de;
+    color: #EF8354;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -230,8 +231,8 @@ section#home {
 }
 
 .grid-item {
-    background-color: #6e6e6e;
-    border: 1px solid #4b97de;
+    background-color: #BFC0C0;
+    border: 2px solid #2D3142;
     padding: 20px;
     font-size: 30px;
     text-align: left;
@@ -239,21 +240,22 @@ section#home {
 }
 
 .grid-item h4 {
-    color: #4b97de;
+    color: #2D3142;
 }
 
 .grid-item h3 {
-    color: white;
+    color: #EF8354;
+    padding-bottom: 5%;
 }
 
 .grid-item p {
-    color: lightgrey;
+    color: #2D3142;
     font-size: 1.5rem;
 }
 
 #resume-button {
     text-align: center;
-    padding: 20px 0;
+    padding-top: 2.5%;
     color: #fff;
 }
 
@@ -263,25 +265,33 @@ section#home {
 
 /* CONTACT */
 .section4 {
-    background-color: #262626;
+    background-color: #4F5D75;
     padding: 5% 0;
 }
 
-.icons {
-    padding: 20px;
-    font-size: 30px;
+#contact-title{
+    color: #EF8354;
+    font-size: 2.5rem;
     text-align: center;
-    text-decoration: none;
+}
+
+#contact-sub{
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: #fff;
+    gap: 15%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 40px;
     margin: 5px 2px;
-}
-
-.fa-linkedin {
-    background: #007bb5;
-    color: white;
-}
-
-.fa-linkedin:hover {
-    opacity: 0.7;
 }
 
 /* RESPONSIVE NAV */
@@ -296,6 +306,10 @@ section#home {
 
     .dropdown_menu {
         display: block;
+    }
+
+    header{
+        position: fixed;
     }
 }
 
